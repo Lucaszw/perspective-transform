@@ -27,15 +27,18 @@
             -webkit-transform-origin: 0 0;
             -moz-transform-origin: 0 0;
             -o-transform-origin: 0 0;
+            user-select: none;
         }
         #box img {
             width: 150px;
             height: 120px;
+            user-select: none;
         }
         .corner {
             position: absolute;
             top: 0px; left: 0px;
             border: 1px solid blue;
+            user-select: none;
         }
     </style>
   </head>
@@ -46,7 +49,7 @@
 
     <div id="container">
         <div id="box">
-            <img src="./flower.png">
+            <img draggable="false" src="./flower.png">
         </div>
         <div id="marker0" class="corner">TL</div>
         <div id="marker2" class="corner">TR</div>
